@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/happy-number/
 
+# TODO: Use linked-list (Floyd's Cycle Detection Algorithm) to detect cycles.
+# or any other cycle detection algorithm.
 
 from typing import List
 
