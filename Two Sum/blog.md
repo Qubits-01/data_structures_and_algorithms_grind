@@ -26,7 +26,7 @@ Explanation: nums[0] + nums[1] == 9, so we return [0, 1].
 I'm employing a hashmap to efficiently solve this problem. Here's my strategy:
 
 ```python
-def twoSum(self, nums: List[int], target: int) -> List[int]:
+def twoSum(nums: List[int], target: int) -> List[int]:
     prevMap = {}  # val -> index
 
     for i, n in enumerate(nums):
@@ -59,9 +59,13 @@ Utilizing a hashmap is crucial for achieving an efficient solution. Here's why:
 
 By leveraging the constant time complexity of dictionary lookups, we achieve a linear time complexity of O(n) for solving the Two Sum problem, making our solution highly efficient, especially for large input sizes.
 
-**🔍 Conclusion:**
+**🔍 Discussion on Space Complexity and Trade-offs:**
 
-The Two Sum problem underscores the importance of selecting the right data structure for solving algorithmic problems efficiently. Hashmaps, with their constant time lookup, play a pivotal role in optimizing our solution to achieve linear time complexity. As we continue our journey in data structures and algorithms, mastering and effectively utilizing hashmaps will be invaluable.
+The space complexity of our solution is O(n), where n represents the number of elements in the input array `nums`. In the worst-case scenario, we may need to store most of the n elements in the hashmap `prevMap`. This accounts for situations where we encounter all elements in `nums` except one while iterating through the array to find the unique pair that sums up to the target. Therefore, even though we technically store n - 1 elements (due to the guaranteed unique pair), according to the principles of complexity analysis, we simplify this to O(n) by considering the dominant factor.
+
+The trade-off between time and space complexity is common in algorithm design. In this case, we prioritize time efficiency by using additional space to store the hashmap. However, for applications with strict memory constraints or when optimizing for space is critical, alternative approaches may be explored.
+
+Understanding these trade-offs and choosing the most suitable solution based on the problem requirements is crucial in algorithm design.
 
 **💼 Possible Applications of Hashmaps:**
 
