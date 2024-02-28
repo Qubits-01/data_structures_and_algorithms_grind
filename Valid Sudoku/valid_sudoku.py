@@ -1,3 +1,5 @@
+# Ref: https://leetcode.com/problems/valid-sudoku/
+
 import collections
 from typing import List
 
