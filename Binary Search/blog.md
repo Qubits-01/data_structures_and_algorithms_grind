@@ -64,4 +64,4 @@ Let n be the size of the input array nums.
 **Conclusion:**
 Binary search is a powerful algorithm for searching within sorted arrays, offering logarithmic runtime complexity. In this blog post, we've explored the concept of binary search, discussed its efficiency, provided a Python implementation, and highlighted some of its applications. With this knowledge, you're now equipped to leverage binary search in your own projects efficiently. Happy coding!
 
-[Check out LeetCode for this kind of problem!](https://leetcode.com/problems/binary-search/)
+For further exploration and practice, visit the ["Binary Search" problem on LeetCode](https://leetcode.com/problems/binary-search/). Happy coding! 🚀
